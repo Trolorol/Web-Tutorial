@@ -1,0 +1,9 @@
+
+table{
+    grid-column: 1fr;
+    display: flex;
+    flex-direction: column;
+    border-color: blueviolet;
+    padding: 10px;
+    border-style: groove;
+  }

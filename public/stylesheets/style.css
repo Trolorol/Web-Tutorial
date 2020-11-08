@@ -1,8 +1,50 @@
-body {
+.index-body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: grid;
+  grid-template-columns: 15% 70% 15%; /* Inicial era 20% 60% 20% alterei porque havia espaço */
 }
 
-a {
-  color: #00B7FF;
+header, footer {
+  grid-column: 1/4;
+  display:flex;
+  color: aliceblue;
+  background-color: blueviolet;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: blueviolet;
+  padding: 10px;
+  margin: 10px 10px 10px 0px /* Ordem: Top Right Bottom Left */
+}
+
+nav a:link{color: white;}
+nav a:visited{color: white;}
+nav a:hover{color: turquoise;}
+nav a {padding-bottom: 10px;}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  border-style: groove;
+  border-color: blueviolet;
+  margin: 10px 0px 10px 10px; /* Ordem: Top Right Bottom Left */
+  padding: 10px;
+}
+
+aside a:link{color: blueviolet;}
+aside a:visited{color: blueviolet;}
+aside a:hover{color: turquoise;}
+aside a {padding-bottom: 10px;}
+
+
+#avatar {
+  width: 200px;
+}
+
+.title{
+ margin: auto;
 }

@@ -1,9 +1,17 @@
 
 table{
-    grid-column: 1fr;
-    display: flex;
-    flex-direction: column;
-    border-color: blueviolet;
     padding: 10px;
-    border-style: groove;
+    width: 100%;
+    grid-column: 2/3;
+  }
+
+th{
+  text-align: left;
+  background-color: #de3831;
+  color: white;
+}
+
+.units-body{
+  padding: 10px;
+  margin: 10px 10px 10px 0px /* Ordem: Top Right Bottom Left */
   }

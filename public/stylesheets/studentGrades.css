@@ -1,0 +1,35 @@
+#grade-card-line{
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#grade-card{
+    background-color: rgb(255, 157, 157);
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#grade-card-substring{
+    background-color: rgb(201, 70, 70);
+    margin: 10px;
+    margin-bottom: 50px;
+    color: white;
+    padding: 1vh;
+}
+
+#unit-data{
+    margin: 15px;
+}
+
+
+
+
+/* #exp{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-style: solid;
+} */

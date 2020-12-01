@@ -5,14 +5,15 @@
     flex-direction: row;
 }
 
-#grade-card{
+.grade-card{
     background-color: rgb(255, 157, 157);
     display: flex;
     flex-direction: row;
+    margin-right: 10px;
     
 }
 
-#grade-card-substring{
+.grade-card-substring{
     background-color: rgb(201, 70, 70);
     margin: 10px;
     margin-bottom: 50px;
@@ -20,7 +21,7 @@
     padding: 1vh;
 }
 
-#unit-data{
+.unit-data{
     margin: 15px;
 }
 

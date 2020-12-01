@@ -3,35 +3,44 @@
 <head>
     <title>Learning Platform</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
-    <link rel="stylesheet" href="stylesheets/studentGrades.css">
-    <script src="js/studentGrades.js"></script>
+    <link rel="stylesheet" href="stylesheets/grading.css">
+    <script src="js/grading.js"></script>
 </head>
-<main>
-    <form>
-        <label for="studentName">Student Name:</label>
-        <input type="text" id="studentname">
 
-        <label for="unitName">Unit Name:</label>
-        <input type="text" id="unitName">
+<body>
+    <header class="header">
+        <a href="index.html"><img id="avatar" src="./images/student.png" width="200" height="200" /></a>
+        <section class="title">
+            <h1>Learning Platform</h1>
+            <h3 id="student"> </h3>
+        </section>
+    </header>
+    <main>
+        <form>
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentname"><br>
 
-        <label for="projectGrade">Project Grade:</label>
-        <input type="number" id="projectGrade">
+            <label for="unitName">Unit Name:</label>
+            <input type="text" id="unitName"><br>
 
-        <label for="projectPercentage">Percentage:</label>
-        <input type="number" id="projectPercentage">
+            <label for="projectGrade">Project Grade:</label>
+            <input type="number" id="projectGrade" name="projectGrade" min="0" max="20">
 
-        <label for="testGrade">Test Grade:</label>
-        <input type="text" id="studentname">
+            <label for="projectPercentage">Percentage:</label>
+            <input type="number" id="projectPercentage" name="projectPercentage" min="0" max="100"><br>
 
-        <label for="testPercentage">Percentage:</label>
-        <input type="text" id="studentname">
+            <label for="testGrade">Test Grade:</label>
+            <input type="number" id="testGrade" name="testGrade" min="0" max="20">
 
-        <input type="button" value="Calculate" onclick="">
+            <label for="testPercentage">Percentage:</label>
+            <input type="number" id="testPercentage" name="testPercentage" min="0" max="100"><br>
 
-        <input type="button" value="Reset" onclick="">
-    </form>
+            <input type="button" value="Calculate" onclick="calculate()">
 
-</main>
-
+            <input type="button" value="Reset" onclick="resetResult()">
+        </form>
+        <p id="result"></p>
+    </main>
+</body>
 
 </html>
